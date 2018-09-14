@@ -1,0 +1,18 @@
+
+#ifndef MODIFYCODETOOL_@ClassName@_HPP
+#define MODIFYCODETOOL_@ClassName@_HPP
+#pragma once
+#include <string>
+class @ClassName@
+{
+public:
+    @ClassName@();
+    virtual ~@ClassName@();
+protected:
+    void Set@ClassName@Name(const std::string& InName);
+    std::string Get@ClassName@Name();
+private:
+    std::string MyName;
+};
+
+#endif // END OF MODIFYCODETOOL_@ClassName@_HPP
