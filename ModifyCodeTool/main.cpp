@@ -616,7 +616,8 @@ int wmain()
     {
         ScopeRunTime AllRunTime("Total");
         ConfigDefinition Definition;
-        LoadConfigDefinition(Definition);
+        if (!LoadConfigDefinition(Definition))
+            return 0;
         GenerateRubbishClass(Definition);
         std::vector<std::string> ProjectHeaderFiles;
         std::vector<std::string> ProjectSourceFiles;
