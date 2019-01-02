@@ -197,7 +197,6 @@ bool GenerateRubbishClass(const ConfigDefinition& Definition)
 {
     FKLog(">>> Generate rubbish class...");
     ScopeRunTime SRT("Generate rubbish class");
-    auto  aaa = File::ReadAllBytes(Definition.ResourcesPath + "class_header.template");
     std::string ClassHeaderTemplateContent = File::ReadAllText(Definition.ResourcesPath + "class_header.template");
     std::string ClassSourceTempLateContent = File::ReadAllText(Definition.ResourcesPath + "class_source.template");
     std::string ClassesDir = Definition.WorkPath + "Classes\\";
